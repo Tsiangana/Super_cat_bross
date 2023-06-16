@@ -1,0 +1,98 @@
+
+
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+
+	.game-board{
+		width: 100%;
+		height: 500px;
+		border-bottom: 15px solid green;
+		margin: 0px auto;
+		position: relative;
+		overflow: hidden;
+		background: linear-gradient(#87CEEB, #E6F6FF);
+
+	}
+
+	.pipe{
+		position: absolute;
+		bottom: 0;
+		width: 90px;
+		animation: pipe-animation 2s infinite linear;
+	}
+
+	@keyframes pipe-animation{
+		from{
+			right: -90px;
+		}
+		to{
+			right: 100%;
+		}
+	}
+
+	.gato{
+		width: 100px;
+		border-radius: 100px 100px 8px 8px;
+		position: absolute;
+		bottom: 0;
+		left: 25px;
+	}
+
+	.jump{
+		animation: jump 500ms ease-out;
+	}
+
+	@keyframes jump {
+		0%{
+			bottom: 0;
+		}
+		40%{
+			bottom: 250px;
+		}
+		50%{
+			bottom: 250px;
+		}
+		60%{
+			bottom: 250px;
+		}
+		70%{
+			bottom: 220px;
+		}
+		100%{
+			bottom: 0;
+		}
+	}
+
+	.ceu{
+		width: 1200px;
+		position: absolute;
+		animation: ceu_animation 20s infinite linear;
+	}
+
+	@keyframes ceu_animation{
+		from{
+			right: -1200px;
+		}
+		to{
+			right: 100%;
+		}
+	}
+
+	.ceu1{
+		width: 1200px;
+		position: absolute;
+		animation: ceu_animation1 30s infinite linear;
+	}
+
+	@keyframes ceu_animation1{
+		from{
+			right: -2400px;
+		}
+		to{
+			right: 100%;
+		}
+	}
